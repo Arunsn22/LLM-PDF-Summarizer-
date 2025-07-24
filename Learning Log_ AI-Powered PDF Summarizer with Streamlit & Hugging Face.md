@@ -23,6 +23,9 @@ UUID – Session-based uniqueness for file resets
 HTML/CSS – Custom styling of buttons, title, and layout
 
 
+
+
+
 Topics Learned
 | **Concept**                          | **Description**                                          |
 | ------------------------------------ | -------------------------------------------------------- |
