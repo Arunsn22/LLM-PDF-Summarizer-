@@ -1,3 +1,10 @@
+LLM-PDF-Summarizer – Learning Log
+===========================
+
+Platform: Local system with Ollama + Python (Streamlit + FastAPI)
+
+
+
 Learning Log: AI-Powered PDF Summarizer with Streamlit & Hugging Face
 Project Summary
 This project aimed to build a web-based PDF summarization tool that allows users to upload a PDF and receive an AI-generated summary using Hugging Face transformers. The frontend was created using Streamlit with a focus on interactivity and UI polish.
