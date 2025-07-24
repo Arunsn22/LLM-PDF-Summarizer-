@@ -44,23 +44,22 @@ Issues Encountered & Solutions
 
 
 Final App Features
-Upload PDF
+| **Feature**                        | **Description**                                                |
+| ---------------------------------- | -------------------------------------------------------------- |
+| Upload PDF                         | Allow users to upload a PDF file                               |
+| Extract text from PDF              | Use **PDFMiner** to extract raw text content from uploaded PDF |
+| Summarize using BART model         | Leverage **Hugging Face BART** model for text summarization    |
+| Download as `.txt`                 | Enable downloading the summary as a plain text file            |
+| Reset with “Summarize Another PDF” | Provide a reset button to start a new summarization            |
+| Styled UI                          | Enhanced UI with styled buttons, title, hover effects, spacing |
+| File state reset across reruns     | Ensure file upload state resets when app is rerun              |
 
-Extract text from PDF using PDFMiner
-
-Summarize using BART model (Hugging Face)
-
-Download as .txt
-
-Reset with “Summarize Another PDF”
-
-Styled UI: buttons, title, hover, spacing
-
-File state reset across reruns
 Commands:
-pip install streamlit transformers torch pdfminer.six
-Create app.py file
-streamlit run app.py
+| **Step**              | **Command / Action**                                    |
+| --------------------- | ------------------------------------------------------- |
+| Install dependencies  | `pip install streamlit transformers torch pdfminer.six` |
+| Create app file       | Create a file named `app.py`                            |
+| Run the Streamlit app | `streamlit run app.py`                                  |
 
 
 
