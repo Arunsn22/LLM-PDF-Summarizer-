@@ -17,26 +17,30 @@ HTML/CSS – Custom styling of buttons, title, and layout
 
 
 Topics Learned
-Concept	Description
-streamlit.file_uploader	Handling file uploads in Streamlit
-streamlit.download_button	Letting users download generated summaries
-Hugging Face pipeline()	Using pretrained models for summarization
-pdfminer.high_level.extract_text()	Extracting text content from PDF files
-Session state management	Using st.session_state to persist data across reruns
-UI/UX enhancements	Customizing button styles, hover effects, download icons
-App reset mechanics	Resetting session + file upload using dynamic keys
-Chunking large text	Splitting PDF text into smaller parts for model limits
-st.rerun()	Reloading the app to start fresh
+| **Concept**                          | **Description**                                          |
+| ------------------------------------ | -------------------------------------------------------- |
+| `streamlit.file_uploader`            | Handling file uploads in Streamlit                       |
+| `streamlit.download_button`          | Letting users download generated summaries               |
+| Hugging Face `pipeline()`            | Using pretrained models for summarization                |
+| `pdfminer.high_level.extract_text()` | Extracting text content from PDF files                   |
+| Session state management             | Using `st.session_state` to persist data across reruns   |
+| UI/UX enhancements                   | Customizing button styles, hover effects, download icons |
+| App reset mechanics                  | Resetting session + file upload using dynamic keys       |
+| Chunking large text                  | Splitting PDF text into smaller parts for model limits   |
+| `st.rerun()`                         | Reloading the app to start fresh                         |
+
 
 Issues Encountered & Solutions
-Issue	Solution
-set_page_config() not first	Moved st.set_page_config() to the first Streamlit command
-File upload not clearing on reset	Added key=str(uuid.uuid4()) to st.file_uploader and regenerated key on reset
-st.experimental_rerun() not found	Replaced with st.rerun() for Streamlit v1.31+
-“Download Summary” button not centered	Used st.columns([1, 2, 1]) and placed button inside center column
-Session reset not clearing file upload	Manually deleted session keys and changed upload key
-Summary not persisting	Stored summary in st.session_state to persist across reruns
-summary not defined error	Ensured summary is generated and accessed within the same conditional scope
+| **Issue**                              | **Solution**                                                                  |
+| -------------------------------------- | ----------------------------------------------------------------------------- |
+| `set_page_config()` not first          | Moved `st.set_page_config()` to the first Streamlit command                   |
+| File upload not clearing on reset      | Added `key=str(uuid.uuid4())` to `st.file_uploader` and regenerated key       |
+| `st.experimental_rerun()` not found    | Replaced with `st.rerun()` for Streamlit v1.31+                               |
+| “Download Summary” button not centered | Used `st.columns([1, 2, 1])` and placed button inside center column           |
+| Session reset not clearing file upload | Manually deleted session keys and changed upload key                          |
+| Summary not persisting                 | Stored `summary` in `st.session_state` to persist across reruns               |
+| `summary` not defined error            | Ensured `summary` is generated and accessed within the same conditional scope |
+
 
 
 Final App Features
