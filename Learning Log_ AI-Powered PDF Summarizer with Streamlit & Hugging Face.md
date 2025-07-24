@@ -23,10 +23,9 @@ UUID – Session-based uniqueness for file resets
 HTML/CSS – Custom styling of buttons, title, and layout
 
 
-
-
-
 Topics Learned
+--------------------
+
 | **Concept**                          | **Description**                                          |
 | ------------------------------------ | -------------------------------------------------------- |
 | `streamlit.file_uploader`            | Handling file uploads in Streamlit                       |
@@ -40,7 +39,10 @@ Topics Learned
 | `st.rerun()`                         | Reloading the app to start fresh                         |
 
 
+
 Issues Encountered & Solutions
+-----------------------------------------------
+
 | **Issue**                              | **Solution**                                                                  |
 | -------------------------------------- | ----------------------------------------------------------------------------- |
 | `set_page_config()` not first          | Moved `st.set_page_config()` to the first Streamlit command                   |
@@ -52,8 +54,9 @@ Issues Encountered & Solutions
 | `summary` not defined error            | Ensured `summary` is generated and accessed within the same conditional scope |
 
 
-
 Final App Features
+----------------------------
+
 | **Feature**                        | **Description**                                                |
 | ---------------------------------- | -------------------------------------------------------------- |
 | Upload PDF                         | Allow users to upload a PDF file                               |
@@ -64,7 +67,9 @@ Final App Features
 | Styled UI                          | Enhanced UI with styled buttons, title, hover effects, spacing |
 | File state reset across reruns     | Ensure file upload state resets when app is rerun              |
 
-Commands:
+Commands
+------------------
+
 | **Step**              | **Command / Action**                                    |
 | --------------------- | ------------------------------------------------------- |
 | Install dependencies  | `pip install streamlit transformers torch pdfminer.six` |
